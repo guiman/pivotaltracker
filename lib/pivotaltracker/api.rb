@@ -1,16 +1,17 @@
+require 'pivotaltracker/api/configuration'
+
 module PivotalTracker
   class API
-
-    def project(project_id)
-      raise NoProjectError.new(project_id)
+    def self.configure
+      yield(configuration)
     end
 
-    private
+    def self.reset!
+      @configuration = Configuration.new
+    end
 
-    attr_reader :token
-
-    def initialize(token)
-      @token = token
+    def self.configuration
+      @configuration ||= Configuration.new
     end
   end
 end

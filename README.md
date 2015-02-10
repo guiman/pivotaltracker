@@ -21,13 +21,20 @@ Or install it yourself as:
 ## Usage
 
 ```
-api = PivotalTracker::API.new(api_token)
-project = api.project(project_id)
+api = PivotalTracker::API.new(configuration) do |config|
+  config.token = api_token
+end
+
+project = PivotalTracker::Project.find(project_id)
 
 stories = project.stories
 iterations = project.iterations
 
 stories_from_iterations = iterations.first.stories
+
+...
+
+api.reset!
 ```
 
 ## Contributing

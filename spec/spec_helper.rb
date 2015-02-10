@@ -1,5 +1,4 @@
-require 'bundler'
-Bundler.require
+require 'pivotaltracker'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
