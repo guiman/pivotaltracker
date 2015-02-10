@@ -13,3 +13,8 @@ module PivotalTracker
     end
   end
 end
+
+begin
+  require 'pry'
+rescue LoadError
+end

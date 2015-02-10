@@ -1,4 +1,5 @@
 require 'pivotaltracker/api/configuration'
+require 'pivotaltracker/api/client'
 
 module PivotalTracker
   class API

@@ -8,6 +8,7 @@ describe PivotalTracker::API do
       described_class.configure { |config| config.token = token }
 
       expect(described_class.configuration.token).to eq(token)
+      expect(described_class.configuration.client).to eq(PivotalTracker::API::Client)
     end
 
     after(:each) do

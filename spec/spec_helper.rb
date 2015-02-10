@@ -9,3 +9,11 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 end
+
+module PivotalTracker
+  class API
+    class TestClient < ::PivotalTracker::API::Client
+      # everything is stubbed
+    end
+  end
+end
