@@ -1,6 +1,7 @@
 require 'pivotaltracker/version'
 require 'pivotaltracker/api'
 require 'pivotaltracker/project'
+require 'faraday'
 
 module PivotalTracker
   NoProjectError = Class.new(StandardError) do
