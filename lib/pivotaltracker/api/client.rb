@@ -16,7 +16,8 @@ module PivotalTracker
       private
 
       def build_url(endpoint, id, options={})
-        "services/v5/#{endpoint}/#{id}"
+        parsed_endpoint = endpoint.gsub(/:project_id/, id.to_s)
+        "services/v5/#{parsed_endpoint}"
       end
     end
   end
