@@ -1,0 +1,372 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects/367813/stories
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      X-Trackertoken:
+      - ''
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Tracker-Project-Version:
+      - '79039'
+      X-Tracker-Pagination-Total:
+      - '3104'
+      X-Tracker-Pagination-Offset:
+      - '0'
+      X-Tracker-Pagination-Limit:
+      - '100'
+      X-Tracker-Pagination-Returned:
+      - '100'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0f3e896fde04903f3e92326082028d11
+      X-Runtime:
+      - '0.035493'
+      Date:
+      - Wed, 25 Feb 2015 08:51:51 GMT
+      X-Rack-Cache:
+      - miss
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.41
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      X-Tracker-Client-Pinger-Interval:
+      - '8'
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"kind":"story","id":18524765,"created_at":"2011-09-20T10:08:40Z","updated_at":"2011-09-21T10:44:12Z","accepted_at":"2011-09-21T10:44:12Z","estimate":2,"story_type":"feature","name":"As
+        a policy writer I want to be able to save an unfinished policy so that I can
+        resume editing later","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524765","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":18660637,"created_at":"2011-09-22T16:48:16Z","updated_at":"2011-09-23T14:20:09Z","accepted_at":"2011-09-23T14:20:09Z","estimate":1,"story_type":"feature","name":"Login
+        should take user to admin area","description":"As an user who is logging in
+        I want to be taken to the admin area instead of the index page.","current_state":"accepted","requested_by_id":56822,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18660637","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":18524791,"created_at":"2011-09-20T10:09:43Z","updated_at":"2011-09-23T14:25:11Z","accepted_at":"2011-09-23T14:25:11Z","estimate":3,"story_type":"feature","name":"As
+        a departmental editor I should be able to view policies which have been submitted
+        for a second set of eyes.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524791","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":18524835,"created_at":"2011-09-20T10:10:58Z","updated_at":"2011-09-23T14:29:59Z","accepted_at":"2011-09-23T14:29:59Z","estimate":5,"story_type":"feature","name":"As
+        a departmental editor I want to be able to publish a policy so that policies
+        are viewable by the public","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524835","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":18524815,"created_at":"2011-09-20T10:10:27Z","updated_at":"2011-09-23T14:32:08Z","accepted_at":"2011-09-23T14:32:08Z","estimate":3,"story_type":"feature","name":"As
+        a departmental editor I want to be able to edit a policy as the ''second pair
+        of eyes''","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524815","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":18830079,"created_at":"2011-09-26T08:46:51Z","updated_at":"2011-09-26T10:14:12Z","accepted_at":"2011-09-26T10:14:12Z","estimate":2,"story_type":"feature","name":"As
+        GDS I don''t want any policies to be published without actually having been
+        viewed by a departmental editor.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18830079","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":18524725,"created_at":"2011-09-20T10:07:07Z","updated_at":"2011-09-26T14:34:05Z","accepted_at":"2011-09-26T11:00:00Z","estimate":5,"story_type":"feature","name":"Bootstrap
+        App","current_state":"accepted","requested_by_id":7918,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524725","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":18830203,"created_at":"2011-09-26T08:48:25Z","updated_at":"2011-09-26T14:25:59Z","accepted_at":"2011-09-26T14:25:59Z","estimate":3,"story_type":"feature","name":"As
+        a departmental editor I never want to inadvertently publish a policy with
+        changes that I haven''t read","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18830203","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":18830333,"created_at":"2011-09-26T08:50:08Z","updated_at":"2011-09-26T16:15:58Z","accepted_at":"2011-09-26T16:15:58Z","estimate":2,"story_type":"feature","name":"As
+        anyone editing a policy I don''t want to overwrite Changes made to a policy
+        made whilst I was editing it","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18830333","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":18524971,"created_at":"2011-09-20T10:16:02Z","updated_at":"2011-09-27T11:27:27Z","accepted_at":"2011-09-27T11:27:27Z","estimate":3,"story_type":"feature","name":"As
+        a policy writer I want to be able to start drafting changes to a published
+        policy without affecting the policy visible to the public so that I can improve
+        a policy in a controlled way.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524971","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":18830439,"created_at":"2011-09-26T08:51:20Z","updated_at":"2011-09-27T11:34:17Z","accepted_at":"2011-09-27T11:34:17Z","estimate":2,"story_type":"feature","name":"As
+        anyone editing a policy I don''t want to lose any changes made to a policy
+        that could not be saved because another user had saved before me","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18830439","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":18898503,"created_at":"2011-09-27T08:25:01Z","updated_at":"2011-09-27T11:36:09Z","accepted_at":"2011-09-27T11:36:09Z","story_type":"bug","name":"Editing
+        a submitted edition loses changes if validation fails","description":"Steps
+        to reproduce:\n\n- Create a new policy and submit it for the ''second pair
+        of eyes''\n- Edit the submitted policy, deleting the title (to force a validation
+        failure) and making changes to the text\n\nWhat should happen:\n\nYou should
+        be returned to the edit form, with some text indicating a validation failure
+        (due to the missing title).\n\nWhat does happen:\n\nIt redirects to the submitted
+        list, making it appear that your changes have been saved, when in reality
+        they haven''t.","current_state":"accepted","requested_by_id":56825,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18898503","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":18708603,"created_at":"2011-09-23T15:55:49Z","updated_at":"2011-09-27T22:05:35Z","accepted_at":"2011-09-27T22:05:35Z","estimate":3,"story_type":"feature","name":"As
+        a departmental editor I want to be able to publish a new edition of a policy
+        from a writers draft so that the public sees the most up to date policy.","description":"Note
+        that the new edition should be published to the same URL as the original edition.
+        And the previous edition should no longer be visible to the public.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18708603","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":18940833,"created_at":"2011-09-27T22:10:22Z","updated_at":"2011-09-28T11:37:37Z","accepted_at":"2011-09-28T11:37:37Z","story_type":"bug","name":"Creating
+        a new draft (another edition) of a published version saves directly into Second
+        Pair of Eyes not into the drafts section.","description":"Create and publish
+        a policy.  then from the published tab, click the create new draft button
+        (either as editor or writer) - and save.  It''ll appear in the submitted section.  I
+        expect it to be in the draft section.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18940833","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":18963979,"created_at":"2011-09-28T11:44:25Z","updated_at":"2011-09-28T13:32:59Z","accepted_at":"2011-09-28T13:32:59Z","story_type":"bug","name":"Double
+        clicking on save when creating a policy creates two instances.","description":"Does
+        this for save, worth checking other submit , save, buttons etc...","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18963979","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":18524875,"created_at":"2011-09-20T10:12:21Z","updated_at":"2011-09-28T16:33:27Z","accepted_at":"2011-09-28T16:33:27Z","estimate":2,"story_type":"feature","name":"As
+        a policy writer I want to be able to request fact checking for a draft policy","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524875","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":18524889,"created_at":"2011-09-20T10:13:25Z","updated_at":"2011-09-28T16:33:44Z","accepted_at":"2011-09-28T16:33:44Z","estimate":2,"story_type":"feature","name":"As
+        a departmental editor I want to be able to request fact checking for a draft
+        policy","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524889","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":18524881,"created_at":"2011-09-20T10:12:53Z","updated_at":"2011-09-28T17:03:45Z","accepted_at":"2011-09-28T17:03:45Z","estimate":3,"story_type":"feature","name":"As
+        a policy writer I want to be able to see the fact checker''s comments for
+        a policy","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524881","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":18524907,"created_at":"2011-09-20T10:13:52Z","updated_at":"2011-09-28T17:03:50Z","accepted_at":"2011-09-28T17:03:50Z","estimate":2,"story_type":"feature","name":"As
+        a departmental editor I want to be able to see the fact checkers comments
+        for a policy","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524907","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":18970473,"created_at":"2011-09-28T14:08:02Z","updated_at":"2011-09-28T17:26:18Z","accepted_at":"2011-09-28T17:26:18Z","story_type":"bug","name":"When
+        viewing a published policy when signed in there is a publish button which
+        throws an error page if pressed.","description":"The policy writer can''t
+        get this error as an earlier validation stops them publishing, so to replicate
+        you must be an editor.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18970473","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19016353,"created_at":"2011-09-29T08:50:44Z","updated_at":"2011-09-30T13:41:56Z","accepted_at":"2011-09-30T13:41:56Z","story_type":"bug","name":"Viewing
+        /admin should redirect to /admin/editions","description":"Having two urls
+        for the same resource is bad, and also breaks our magic tab highlighting","current_state":"accepted","requested_by_id":56825,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19016353","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19015975,"created_at":"2011-09-29T08:38:55Z","updated_at":"2011-09-30T15:07:50Z","accepted_at":"2011-09-30T15:07:50Z","estimate":2,"story_type":"feature","name":"Writers
+        should be able to attach PDF files to documents they create","description":"The
+        acceptance criteria is that a member of the public/guest should be able to
+        view the attachment from the document page.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19015975","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19016235,"created_at":"2011-09-29T08:46:16Z","updated_at":"2011-09-30T15:51:28Z","accepted_at":"2011-09-30T15:51:28Z","estimate":2,"story_type":"feature","name":"Editors
+        should be able to distinguish between Policies and Publications within the
+        admin interface","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19016235","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19016031,"created_at":"2011-09-29T08:42:04Z","updated_at":"2011-09-30T15:51:47Z","accepted_at":"2011-09-30T15:51:47Z","estimate":3,"story_type":"feature","name":"Members
+        of the public should be able to tell the difference between Policies and Publications","description":"This
+        implies that editors should be able to choose the type of document at the
+        point of creation","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19016031","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19170821,"created_at":"2011-10-03T14:32:41Z","updated_at":"2011-10-03T22:17:30Z","accepted_at":"2011-10-03T11:00:00Z","story_type":"chore","name":"Downgrade
+        from HAML to ERB","description":"All other govuk projects use ERB and it''ll
+        make it easier for people to swap teams if our code also uses it too.","current_state":"accepted","requested_by_id":137492,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19170821","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19166505,"created_at":"2011-10-03T12:57:51Z","updated_at":"2011-10-03T14:22:01Z","accepted_at":"2011-10-03T14:22:01Z","estimate":1,"story_type":"feature","name":"Port
+        8080 access needs sorting urgently","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19166505","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19090097,"created_at":"2011-09-30T15:05:25Z","updated_at":"2011-10-04T07:07:24Z","accepted_at":"2011-10-04T07:07:24Z","story_type":"bug","name":"When
+        creating a new draft from a published publication the PDF is not present for
+        the writer. The body text is.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19090097","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19166791,"created_at":"2011-10-03T13:01:16Z","updated_at":"2011-10-04T07:10:24Z","accepted_at":"2011-10-04T07:10:24Z","estimate":2,"story_type":"feature","name":"As
+        a writer I can use govspeak to add formatting to documents so that they are
+        easier to follow.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19166791","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19173949,"created_at":"2011-10-03T15:25:45Z","updated_at":"2011-10-05T10:10:56Z","accepted_at":"2011-10-05T10:10:56Z","story_type":"bug","name":"If
+        validation fails when creating an edition, the attachment appears to still
+        be present when it is not.","description":"To recreate:\n\nDraft new publication\n\nAttach
+        a file, but don''t fill in title or body, and press save.  Validation fails,
+        but it looks as though the attachment is still available.  In actual fact,
+        due to understandable browser security measures, the user will have to reattach
+        the file.","current_state":"accepted","requested_by_id":56825,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19173949","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19167703,"created_at":"2011-10-03T13:26:33Z","updated_at":"2011-10-06T12:42:24Z","accepted_at":"2011-10-06T12:42:24Z","estimate":1,"story_type":"feature","name":"As
+        a citizen viewing a topic page I wish to see a description of the topic and
+        a list of policies so that I know I am in the right place.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19167703","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":19167589,"created_at":"2011-10-03T13:23:06Z","updated_at":"2011-10-06T12:42:29Z","accepted_at":"2011-10-06T12:42:29Z","estimate":3,"story_type":"feature","name":"As
+        a citizen I can view a list of policies for a chosen topic so that I can see
+        related documents.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19167589","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19167669,"created_at":"2011-10-03T13:25:26Z","updated_at":"2011-10-06T12:43:00Z","accepted_at":"2011-10-06T12:43:00Z","estimate":2,"story_type":"feature","name":"As
+        a citizen I can see the topic area(s) that the document I am viewing relates
+        to so that I can chose to view related content.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19167669","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":19276207,"created_at":"2011-10-05T10:41:14Z","updated_at":"2011-10-06T16:15:37Z","accepted_at":"2011-10-06T16:15:37Z","story_type":"bug","name":"Attachments
+        disappear between deploys","description":"The default upload path is ./public/uploads.  The
+        contents of this directory isn''t persisted across deploys.","current_state":"accepted","requested_by_id":137492,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19276207","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19167767,"created_at":"2011-10-03T13:28:12Z","updated_at":"2011-10-06T16:20:59Z","accepted_at":"2011-10-06T16:20:59Z","estimate":3,"story_type":"feature","name":"As
+        a citizen I want to see which government organisation(s)  is responsible for
+        a document so that I know the source.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19167767","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19176337,"created_at":"2011-10-03T16:05:29Z","updated_at":"2011-10-06T16:21:21Z","accepted_at":"2011-10-06T16:21:21Z","estimate":2,"story_type":"feature","name":"As
+        a citizen I would alike to see a list of topics so that I can easily navigate
+        to the policies of interest to me.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19176337","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19339881,"created_at":"2011-10-06T14:41:29Z","updated_at":"2011-10-06T16:23:36Z","accepted_at":"2011-10-06T16:23:36Z","estimate":0,"story_type":"feature","name":"Change
+        policy flash message","description":"Currently: Your policy has been submitted
+        to your second pair of eyes\n\nChange to: Submitted for review by a second
+        pair of eyes","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19339881","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":19339237,"created_at":"2011-10-06T14:32:14Z","updated_at":"2011-10-07T12:32:12Z","accepted_at":"2011-10-07T12:32:12Z","story_type":"bug","name":"Publishing
+        document should respond nicely.","description":"At present the user is taken
+        back to the submitted list and isn''t show a flash.\n\nThe user should be
+        taken to the published list and shown a notice saying the document has been
+        published.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19339237","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19379727,"created_at":"2011-10-07T08:23:56Z","updated_at":"2011-10-07T15:45:11Z","accepted_at":"2011-10-07T15:45:11Z","story_type":"bug","name":"Some
+        markdown is generating unescaped HTML","description":"This :-\n\n@key point
+        1@\n^key point 2^\n\nGenerates something like this on the rendered page :-\n\n<h3
+        class=\"advisory\">key point 1</h3>\n<div class=\"application-notice info-notice\">key
+        point 2</div>","current_state":"accepted","requested_by_id":56824,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19379727","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19167813,"created_at":"2011-10-03T13:29:17Z","updated_at":"2011-10-11T14:53:02Z","accepted_at":"2011-10-11T11:00:00Z","estimate":3,"story_type":"feature","name":"As
+        a citizen I wish to see the ministers responsible for a policy so I know who
+        to yell at","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19167813","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19391605,"created_at":"2011-10-07T13:38:23Z","updated_at":"2011-10-11T14:52:55Z","accepted_at":"2011-10-11T14:52:55Z","estimate":2,"story_type":"feature","name":"As
+        a citizen I want to see a department page so I can see the ministers and policies
+        it is responsible for.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19391605","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19391559,"created_at":"2011-10-07T13:37:28Z","updated_at":"2011-10-18T20:03:22Z","accepted_at":"2011-10-12T18:51:20Z","estimate":3,"story_type":"feature","name":"As
+        Suzanne I want a stable environment so that I don''t lose my work.","description":"There
+        you go.... Nagging Nellies...","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19391559","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19582781,"created_at":"2011-10-12T10:55:00Z","updated_at":"2011-10-13T09:59:11Z","accepted_at":"2011-10-12T18:55:46Z","estimate":1,"story_type":"feature","name":"Writers
+        should see the list of ministers in alphabetical order","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19582781","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19577783,"created_at":"2011-10-12T08:47:57Z","updated_at":"2011-10-12T19:40:08Z","accepted_at":"2011-10-12T19:40:08Z","story_type":"bug","name":"Fact
+        check request previews ignore govspeak markup","description":"To replicate:\n\n*
+        Create a document containing some govspeak markup\n* Request fact checking\n*
+        Follow the link in the email\n\nThe problem is in the views/admin/fact_check_requests/edit.html.erb
+        template.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19577783","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19583419,"created_at":"2011-10-12T11:17:03Z","updated_at":"2011-10-12T19:41:08Z","accepted_at":"2011-10-12T19:41:08Z","story_type":"bug","name":"Lists
+        in body text should be normal font size and show bullets","description":"Currently,
+        lists in govspeak are rendered in a larger font size than the surrounding
+        paragraphs. They also don''t show their bullet characters.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19583419","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19583197,"created_at":"2011-10-12T11:09:31Z","updated_at":"2011-10-12T19:41:25Z","accepted_at":"2011-10-12T19:41:25Z","estimate":1,"story_type":"feature","name":"Fact
+        checkers should see the name of the person requesting the fact check","description":"As
+        a fact checker I want to know who sent me the request for a fact check (I
+        am more inclined to be helpful to a human than a machine and I might need
+        to talk with them offline)","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19583197","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19573995,"created_at":"2011-10-12T07:41:57Z","updated_at":"2011-10-13T09:02:34Z","accepted_at":"2011-10-13T09:02:11Z","story_type":"bug","name":"Fact
+        check request email has wrong URL","description":"It uses the incorrect host
+        port (8080) on staging.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19573995","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19608723,"created_at":"2011-10-12T19:24:45Z","updated_at":"2011-10-13T10:06:03Z","accepted_at":"2011-10-13T10:06:03Z","estimate":0,"story_type":"feature","name":"Improve
+        the text around a fact checker''s comment","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19608723","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19583057,"created_at":"2011-10-12T11:02:24Z","updated_at":"2011-10-13T10:44:12Z","accepted_at":"2011-10-13T10:44:12Z","estimate":2,"story_type":"feature","name":"The
+        system should prevent fact check requests being sent to obviously invalid
+        email addresses","description":"In order to reduce the risk of not sending
+        to the correct email address (because of a missing @ or trailing full stop,
+        for example)\nThe system should perform some validation on the address entered.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19583057","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19391663,"created_at":"2011-10-07T13:39:11Z","updated_at":"2011-10-13T11:29:22Z","accepted_at":"2011-10-13T11:29:22Z","estimate":2,"story_type":"feature","name":"As
+        a minister I want an ''about me'' page so that people can see the policies
+        and publications I am responsible for.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19391663","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19583227,"created_at":"2011-10-12T11:10:41Z","updated_at":"2011-10-13T11:32:31Z","accepted_at":"2011-10-13T11:32:31Z","estimate":1,"story_type":"feature","name":"Fact
+        checkers should see the title and type of document they''re being asked to
+        check","description":"!s a fact checker I want to know the type and title
+        of the document I am being asked to check (so I know it''s relevant to me
+        and can see what''s what in my inbox if I am checking lots of documents)","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19583227","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19636649,"created_at":"2011-10-13T10:53:37Z","updated_at":"2011-10-14T11:54:24Z","accepted_at":"2011-10-14T11:54:24Z","story_type":"bug","name":"Fact
+        check URL throwing a 500.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19636649","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":19610591,"created_at":"2011-10-12T20:03:19Z","updated_at":"2011-10-14T13:25:13Z","accepted_at":"2011-10-14T13:25:13Z","story_type":"bug","name":"500
+        when adding new supporting doc to a publication that has an attachement.","description":"Not
+        sure that there will ever be a need for supporting docs on a publication,
+        but we shouldn''t allow it if this is the case.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19610591","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19391705,"created_at":"2011-10-07T13:40:05Z","updated_at":"2011-10-14T13:34:30Z","accepted_at":"2011-10-14T13:34:30Z","estimate":2,"story_type":"feature","name":"As
+        Neil I wish to restrict writers from adding attachments to policy headers
+        or children so that the content is more accessible or is added as a publication.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19391705","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19168089,"created_at":"2011-10-03T13:35:07Z","updated_at":"2011-10-17T18:31:11Z","accepted_at":"2011-10-17T18:31:11Z","estimate":3,"story_type":"feature","name":"As
+        a writer I wish to be able to add a child html document to a policy so that
+        supporting information can be supplied.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19168089","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19686621,"created_at":"2011-10-14T09:22:12Z","updated_at":"2011-10-17T18:34:46Z","accepted_at":"2011-10-17T18:34:46Z","story_type":"bug","name":"Conflict
+        pages have misleading message & some controls not disabled","description":"Message
+        assumed your version was on the left and latest version was on right - but
+        now they are top and bottom respectively.\n\nTopic, Organisation & Ministers
+        select controls for latest version were not disabled.","current_state":"accepted","requested_by_id":56824,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19686621","owner_ids":[441235],"labels":[],"owned_by_id":441235},{"kind":"story","id":19167873,"created_at":"2011-10-03T13:30:19Z","updated_at":"2011-10-17T18:52:29Z","accepted_at":"2011-10-17T18:52:29Z","estimate":2,"story_type":"feature","name":"As
+        a citizen I wish to see which of the uk nations a document applies to so I
+        can read the correct content for me.","description":"PH: \"In terms of devolution
+        England is always covered, and any or none of the other 3 can be represented.
+        Some issues will be regional but not devolved... E.g. Sorting bee numbers
+        in Wales is not devolved but relevant to Welsh area. This is at this point
+        not Important. So we care about only the poltical Devolution.\"","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19167873","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19763879,"created_at":"2011-10-17T11:53:38Z","updated_at":"2011-10-19T20:12:19Z","accepted_at":"2011-10-19T20:12:19Z","estimate":3,"story_type":"feature","name":"As
+        a department I want to publish a news article so people can see what we''re
+        doing","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19763879","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19850643,"created_at":"2011-10-18T19:59:07Z","updated_at":"2011-10-20T06:49:03Z","accepted_at":"2011-10-20T06:49:03Z","estimate":1,"story_type":"feature","name":"Replace
+        \"draft new\" with \"create\" to avoid the clumsiness of \"draft new news
+        article\"","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19850643","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":19763897,"created_at":"2011-10-17T11:54:25Z","updated_at":"2011-10-20T13:23:12Z","accepted_at":"2011-10-20T13:23:12Z","estimate":3,"story_type":"feature","name":"As
+        a citizen I want to know how to contact each organisation so I can complain/get
+        in touch","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19763897","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19763919,"created_at":"2011-10-17T11:55:18Z","updated_at":"2011-10-21T11:30:46Z","accepted_at":"2011-10-21T11:30:46Z","estimate":3,"story_type":"feature","name":"Organisation
+        board members & CEO/perm sec","description":"As a citizen/stakeholder I want
+        to know who is the permanent secretary/CEO and members of board of an organisation
+        so that I know who is responsible for implementing policy","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19763919","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19763979,"created_at":"2011-10-17T11:56:32Z","updated_at":"2011-10-21T12:17:54Z","accepted_at":"2011-10-21T19:00:00Z","estimate":2,"story_type":"feature","name":"As
+        a citizen, I want to see which publications relate to a policy, So I can get
+        information about a policy and what the government is doing about it","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19763979","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":19763997,"created_at":"2011-10-17T11:57:20Z","updated_at":"2011-10-21T09:27:58Z","accepted_at":"2011-10-21T19:00:00Z","estimate":2,"story_type":"feature","name":"Fact
+        check email comment","description":"As an editor, I want to be able to give
+        supplemental guidance to fact checkers when making a fact check request, so
+        that the feedback I get is focussed and relevant.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19763997","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19764031,"created_at":"2011-10-17T11:58:18Z","updated_at":"2011-10-24T09:51:53Z","accepted_at":"2011-10-24T09:51:53Z","estimate":2,"story_type":"feature","name":"As
+        an editor, I want to be able to edit topic descriptions, So that they best
+        reflect the nature of the documents they contain","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19764031","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19936203,"created_at":"2011-10-20T10:35:32Z","updated_at":"2011-10-24T11:57:52Z","accepted_at":"2011-10-24T11:57:52Z","story_type":"bug","name":"Text
+        size style issue in unordered lists","description":"NW:\n> Is it my eyes,
+        or is the text size of the second bulleted list a teeny bit smaller \n> than
+        the first bulleted list on this page\n> http://whitehall.staging.alphagov.co.uk/admin/policies/15\n>\n>
+        Only difference in the markdown is extra line spaces in second list.\n>\n>
+        (I like to focus on the big, strategic things)\n\nJC:\nIt is yes, the second
+        is wrapped in a <p> so the style is cascading.\nCould you add a bug to PT?
+        and I''ll make sure it is done.\n","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19936203","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":19609037,"created_at":"2011-10-12T19:32:37Z","updated_at":"2011-10-24T12:04:39Z","accepted_at":"2011-10-24T12:04:39Z","estimate":2,"story_type":"feature","name":"As
+        a writer I don''t want to lose any changes I have made to a  document if I
+        click ''send request'' for a fact check before I click ''save''.  ","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19609037","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":19764117,"created_at":"2011-10-17T12:00:47Z","updated_at":"2011-10-24T12:05:20Z","accepted_at":"2011-10-24T12:05:20Z","estimate":2,"story_type":"feature","name":"As
+        a writer I want to be able to see which policy documents have supporting documents,
+        so I can find and edit them easily","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19764117","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20060765,"created_at":"2011-10-24T10:29:58Z","updated_at":"2011-10-24T14:16:08Z","accepted_at":"2011-10-24T14:16:08Z","story_type":"chore","name":"Form
+        Builder refactoring","description":"I''m going to try and consolidate lots
+        of our form markup/logic into a custom form builder.","current_state":"accepted","requested_by_id":7918,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20060765","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19763887,"created_at":"2011-10-17T11:54:00Z","updated_at":"2011-10-25T10:33:55Z","accepted_at":"2011-10-25T10:33:55Z","estimate":3,"story_type":"feature","name":"As
+        a minister I want my speeches to be listed on my page so people can see what
+        I''m doing","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19763887","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19764013,"created_at":"2011-10-17T11:57:48Z","updated_at":"2012-08-25T20:16:10Z","accepted_at":"2011-10-25T14:40:32Z","estimate":3,"story_type":"feature","name":"As
+        GDS, I want slugs rather than numeric IDs in public URLs, so that URLs are
+        human-friendly.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19764013","owner_ids":[137492],"labels":[{"id":3844373,"project_id":367813,"kind":"label","name":"aug","created_at":"2012-08-25T20:14:40Z","updated_at":"2012-08-25T20:14:40Z"}],"owned_by_id":137492},{"kind":"story","id":19764049,"created_at":"2011-10-17T11:58:50Z","updated_at":"2011-10-25T17:20:19Z","accepted_at":"2011-10-25T17:20:19Z","estimate":3,"story_type":"feature","name":"As
+        an editor, I want to easily preview document formatting, so I can minimise
+        time spent guessing markup","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19764049","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20128043,"created_at":"2011-10-25T13:40:46Z","updated_at":"2011-10-25T17:20:48Z","accepted_at":"2011-10-25T17:20:48Z","story_type":"bug","name":"Creating
+        a new draft of a policy doesn''t copy nations","description":"If you create
+        a new draft of a published policy, the options for nations are not pre-selected
+        with the same nations as the published edition of the policy. I added this
+        as a bug, because this behaviour existed prior to https://www.pivotaltracker.com/story/show/19702493.","current_state":"accepted","requested_by_id":56824,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20128043","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":20178531,"created_at":"2011-10-26T10:43:42Z","updated_at":"2011-10-27T08:10:02Z","accepted_at":"2011-10-27T08:10:02Z","story_type":"bug","name":"Unhelpful
+        message when saving invalid Speech","description":"If I create a speech without
+        the required data then I see the flash error message telling me that there
+        were problems, but I don''t see anything telling me what the problems were.","current_state":"accepted","requested_by_id":137492,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20178531","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20180299,"created_at":"2011-10-26T11:49:55Z","updated_at":"2011-10-27T08:15:45Z","accepted_at":"2011-10-27T08:15:45Z","story_type":"bug","name":"Empty
+        list of related publications on a Policy page","description":"To replicate:\n\n*
+        Create a published policy.\n* Create a publication and associate it with the
+        published policy.\n* View the public published policy page.\n\nYou''ll see
+        a \"Related publications\" heading with no content.  I guess this is because
+        the policy does technically have related publications but none that are published.","current_state":"accepted","requested_by_id":137492,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20180299","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19764097,"created_at":"2011-10-17T12:00:15Z","updated_at":"2011-10-27T08:20:10Z","accepted_at":"2011-10-27T08:20:10Z","estimate":3,"story_type":"feature","name":"As
+        an editor I want to make sure I see and check and supporting documents when
+        submitted to a second pair of eyes, so I don''t publish anything unedited.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19764097","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19763951,"created_at":"2011-10-17T11:55:54Z","updated_at":"2011-10-27T22:16:38Z","accepted_at":"2011-10-27T13:39:48Z","estimate":3,"story_type":"feature","name":"As
+        a citizen I want to see a consultation, including its open, close and response
+        dates, so I can decide whether or not to provide feedback","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19763951","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":20233795,"created_at":"2011-10-27T10:51:08Z","updated_at":"2011-10-27T13:41:39Z","accepted_at":"2011-10-27T13:41:39Z","story_type":"bug","name":"Organisation
+        validation failures","description":"When I create an organisation, but I forget
+        to give it a name, I lose all the data I''ve entered into the other fields
+        and am returned to the list of organisations without any error message telling
+        me what''s happened.\n","current_state":"accepted","requested_by_id":56824,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20233795","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":19764067,"created_at":"2011-10-17T11:59:30Z","updated_at":"2011-10-27T13:55:24Z","accepted_at":"2011-10-27T13:55:24Z","estimate":3,"story_type":"feature","name":"As
+        an editor, I want to be able to request fact checking on a supporting document,
+        So that fact checking can be focussed & relevant","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19764067","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":20240417,"created_at":"2011-10-27T13:56:50Z","updated_at":"2011-10-27T14:09:08Z","accepted_at":"2011-10-27T14:09:08Z","story_type":"bug","name":"Request
+        fact checking returns users into the edit mode for the policy document - not
+        the view mode they were in.","description":"Go to a policy, request a fact
+        check and send it.  You''ll arrive in the edit mode.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20240417","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19702493,"created_at":"2011-10-14T16:09:37Z","updated_at":"2011-10-27T16:29:27Z","accepted_at":"2011-10-27T15:34:50Z","estimate":2,"story_type":"feature","name":"As
+        a writer I want to specify an optional URL for each uk nation excluded from
+        a policy so that people viewing the site know where to go for info if it is
+        not here!","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19702493","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":20205535,"created_at":"2011-10-26T19:54:20Z","updated_at":"2011-10-27T15:36:15Z","accepted_at":"2011-10-27T15:36:15Z","story_type":"bug","name":"Inapplicable
+        nations disappear when policy/consultation fails valiation","description":"If
+        you create or edit a policy or consultation and make changes to the nation
+        applicabilities, but then don''t give the document a title, when the form
+        reloads and shows the errors, it loses the nation applicability data you had
+        entered previously.\n\nSomething similar happens when there is a conflict
+        in a policy or consultation.","current_state":"accepted","requested_by_id":56824,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20205535","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":20241205,"created_at":"2011-10-27T14:16:24Z","updated_at":"2011-10-27T15:57:17Z","accepted_at":"2011-10-27T15:57:17Z","estimate":1,"story_type":"feature","name":"As
+        an editor, I want to easily preview supporting document formatting, so I can
+        minimise time spent guessing markup","description":"Preview link doesn''t
+        appear in supporting docs.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20241205","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":20188001,"created_at":"2011-10-26T14:51:50Z","updated_at":"2011-10-27T16:06:31Z","accepted_at":"2011-10-27T16:06:31Z","story_type":"bug","name":"Related
+        publications also includes consultations","description":"To replicate:\n\n*
+        Create a published policy\n* Create a consultation associated with the published
+        policy\n* Publish the consultation\n* Visit the public facing view of the
+        published policy and you''ll see that the section titled \"Related publications\"
+        contains the consultation.\n\nThis might be as simple as renaming the section
+        title or we might want to list consultations and publications separately.","current_state":"accepted","requested_by_id":137492,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20188001","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19949489,"created_at":"2011-10-20T15:33:00Z","updated_at":"2011-10-28T11:08:14Z","accepted_at":"2011-10-28T11:08:14Z","estimate":5,"story_type":"feature","name":"As
+        a writer, I want to be able to put links to other published documents in my
+        document, so that readers of the document can navigate the content of the
+        site successfully","description":"\n\n---\n\nAt the moment, links are being
+        created which end up linking back into the admin system; obviously this is
+        no good - we don''t want links to the admin preview of documents ending up
+        in the published policies and publications.\n\nI think we''ll need to add
+        some markup (to or around govspeak). Off the top of my head, I think something
+        like:\n\n  [[ #4kho26dq | The title of the document, The text for the link
+        ]]\n\nMy thinking behind that rough sketch is that we''ll need a unique identifier
+        to actually find the document, but it''s more friendly when editing to also
+        have the title of the document present, and we may also need to provide alternative
+        text for the link itself.\n\nWe''d also have to provide a simple way to \"insert\"
+        these links, given the ID isn''t necessarily going to be friendly.\n\nRegarding
+        the rendered link, there are a few basic scenarios:\n\n1. Document with link
+        is unpublished; document being linked to is unpublished - link should point
+        at the admin preview of the unpublished document\n2. Document with link is
+        published; document being linked to is unpublished - \nlink should not point
+        to admin preview; it could just be rendered as the text, without being an
+        actual link?\n3. Document with link is published; document being linked to
+        is published - link the documents normally.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19949489","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20253131,"created_at":"2011-10-27T17:47:50Z","updated_at":"2011-10-28T11:10:00Z","accepted_at":"2011-10-28T11:10:00Z","story_type":"bug","name":"404
+        with this speech http://whitehall.staging.alphagov.co.uk/admin/speeches/58","description":"No
+        clue why.  It has some special characters in the title, but unlikely to be
+        problem.  404 from admin and consumption.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20253131","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20286291,"created_at":"2011-10-28T10:44:15Z","updated_at":"2011-10-28T11:15:42Z","accepted_at":"2011-10-28T11:15:42Z","estimate":1,"story_type":"feature","name":"Text
+        tweaks for fact checkers","description":"From Suzanne:\n\nCURRENT text in
+        Publisher at top of fact check screen: \"You''ve been asked to review this
+        document for factual accuracy. Please read it, and then provide any comments
+        in the form below.\"\nNEW text: Please check this document for factual accuracy
+        and comment in the form below\n \nCURRENT text in Publisher at bottom of fact
+        check screen: \"To help Suzanne Amos, try to be clear where your comments
+        refer to a supporting document rather than the main document body.\"\nNEW
+        text: Please indicate whether your comments refer to the main document or
+        supporting document\n \nCURRENT text in fact check email: \"I would like you
+        to check the policy titled \"Operating a ''one in, one out'' rule for regulation\"
+        for factual accuracy.\nNEW text: Please check the following policy for factual
+        accuracy: [insert name] ","current_state":"accepted","requested_by_id":7918,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20286291","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20285751,"created_at":"2011-10-28T10:22:44Z","updated_at":"2011-10-31T09:43:44Z","accepted_at":"2011-10-28T15:40:01Z","estimate":2,"story_type":"feature","name":"Citizens
+        should see a list of news articles associated with a policy","description":"As
+        a citizen\nI want to see the news articles relevant to the policy I am reading\nSo
+        I don''t miss the latest developments on that policy","current_state":"accepted","requested_by_id":137492,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20285751","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":20287899,"created_at":"2011-10-28T11:43:07Z","updated_at":"2011-10-28T21:08:24Z","accepted_at":"2011-10-28T21:08:24Z","estimate":2,"story_type":"feature","name":"As
+        a writer I want to be able to see tips on using common markdown while I am
+        editing documents so I don''t have to keep looking it up","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20287899","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":20233823,"created_at":"2011-10-27T10:52:13Z","updated_at":"2011-10-30T19:15:20Z","accepted_at":"2011-10-30T19:13:39Z","estimate":3,"story_type":"feature","name":"As
+        a writer I would like to be able to filter the documents in the Wonkotron
+        by type so that I can quickly find the document I wish to look at.","description":"It
+        is implied that if future columns are added they *may* need to also be sortable...
+        ","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20233823","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":20244743,"created_at":"2011-10-27T15:15:59Z","updated_at":"2011-10-31T13:28:45Z","accepted_at":"2011-10-31T13:28:45Z","estimate":2,"story_type":"feature","name":"Fact
+        check pending indicator","description":"As a writer I want to be able to see
+        fact check requests that have not yet been responded to so that I know what
+        feedback is outstanding.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20244743","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20288169,"created_at":"2011-10-28T11:51:27Z","updated_at":"2011-10-31T13:38:13Z","accepted_at":"2011-10-31T13:38:13Z","estimate":2,"story_type":"feature","name":"Citizens
+        should see a list of policies associated with a news article","description":"As
+        a citizen\nI want to see the policies that are relevant to the news article
+        I''m reading\nSo that I can better understand the context of the news article","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20288169","owner_ids":[137492],"labels":[],"owned_by_id":137492},{"kind":"story","id":20356013,"created_at":"2011-10-31T11:04:40Z","updated_at":"2011-10-31T16:44:04Z","accepted_at":"2011-10-31T16:44:04Z","story_type":"bug","name":"Policies
+        always apply to England","description":"On http://whitehall.staging.alphagov.co.uk/policies/motoring-into-the-21st-century
+        the policy says \"This policy does not apply to England, Northern Ireland,
+        Scotland, and Wales.\"","current_state":"accepted","requested_by_id":7918,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20356013","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":20374205,"created_at":"2011-10-31T16:43:21Z","updated_at":"2011-10-31T18:34:27Z","accepted_at":"2011-10-31T18:34:27Z","story_type":"bug","name":"Intermittent
+        500 error thrown when attempting to save changes in a document that is already
+        open for editing.","description":"The error is shown to the person who comes
+        in later and starts and finishes the edit before the first person saves.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20374205","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":20286521,"created_at":"2011-10-28T10:56:24Z","updated_at":"2011-10-31T21:43:35Z","accepted_at":"2011-10-31T21:43:35Z","story_type":"bug","name":"PDFs
+        over a certain size are blocked by nginx","description":"From Suzanne:\n\nJust
+        trying to upload a pdf that''s 1.06 MB (1,121,407 bytes) and this is the error
+        message:\n\n413 Request Entity Too Large\n\nnginx/0.7.67","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20286521","owner_ids":[56824],"labels":[],"owned_by_id":56824},{"kind":"story","id":20070865,"created_at":"2011-10-24T14:34:42Z","updated_at":"2011-11-01T12:23:32Z","accepted_at":"2011-11-01T12:23:32Z","estimate":2,"story_type":"feature","name":"As
+        a citizen looking at a publication I want to see the related policies and
+        uk nations so I can see the context and applicability","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20070865","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":20394953,"created_at":"2011-10-31T21:51:51Z","updated_at":"2011-11-01T15:10:10Z","accepted_at":"2011-11-01T15:10:09Z","story_type":"bug","name":"Creation
+        of new policy has oddity with Excluded Nations","description":"I don''t know
+        if this has just not been delivered yet. (if not then delete me).. but when
+        you create a new publication the Excluded nations heading appears but no options
+        beneath.  ","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20394953","owner_ids":[56825],"labels":[],"owned_by_id":56825},{"kind":"story","id":19589381,"created_at":"2011-10-12T14:08:46Z","updated_at":"2011-11-02T14:08:34Z","accepted_at":"2011-11-02T14:08:33Z","estimate":3,"story_type":"feature","name":"Adding  multiple
+        attachments to publications","description":"As a Writer I need be able to
+        add more than one pdf to a publication so that all the files can be shown.","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19589381","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":20359441,"created_at":"2011-10-31T12:35:57Z","updated_at":"2011-11-02T15:33:23Z","accepted_at":"2011-11-02T15:33:23Z","estimate":2,"story_type":"feature","name":"Delete
+        pdf from publication","description":"As a writer I need to be able to delete
+        an attached pdf from a draft so that I can ensure only relevant pdfs are published.","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20359441","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19608941,"created_at":"2011-10-12T19:30:05Z","updated_at":"2011-11-02T15:35:35Z","accepted_at":"2011-11-02T15:35:35Z","estimate":1,"story_type":"feature","name":"Navigating
+        from Wonkotron to frontend.","description":"As a writer I want to be able
+        to go easily from publisher to viewing my published content, so I can check
+        it has published successfully and grab the URL for sharing","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19608941","owner_ids":[56822],"labels":[],"owned_by_id":56822},{"kind":"story","id":20059667,"created_at":"2011-10-24T09:54:06Z","updated_at":"2011-11-02T21:08:48Z","accepted_at":"2011-11-02T21:08:48Z","estimate":2,"story_type":"feature","name":"Admin
+        interface for topics list","description":"As a GDS product team member, I
+        want to be able to add new topics so the list of topics can change in line
+        with changing government priorities ","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/20059667","owner_ids":[7918],"labels":[],"owned_by_id":7918},{"kind":"story","id":19583339,"created_at":"2011-10-12T11:14:15Z","updated_at":"2011-11-03T11:12:12Z","accepted_at":"2011-11-02T21:11:31Z","estimate":3,"story_type":"feature","name":"Deletion
+        of documents in workflow.","description":"As a writer I want to delete draft
+        or submitted documents I have created in error (because nobody''s perfect)","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19583339","owner_ids":[56824],"labels":[],"owned_by_id":56824}]'
+    http_version: 
+  recorded_at: Wed, 25 Feb 2015 08:51:51 GMT
+recorded_with: VCR 2.9.3

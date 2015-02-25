@@ -2,6 +2,12 @@
 
 Pivotal Tracker API v.5 client.
 
+[![Code
+Climate](https://codeclimate.com/github/guiman/pivotaltracker/badges/gpa.svg)](https://codeclimate.com/github/guiman/pivotaltracker)
+[![Build
+Status](https://travis-ci.org/guiman/pivotaltracker.svg)](https://travis-ci.org/guiman/pivotaltracker)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -21,13 +27,20 @@ Or install it yourself as:
 ## Usage
 
 ```
-api = PivotalTracker::API.new(api_token)
-project = api.project(project_id)
+api = PivotalTracker::API.new(configuration) do |config|
+  config.token = api_token
+end
+
+project = PivotalTracker::Project.find(project_id)
 
 stories = project.stories
 iterations = project.iterations
 
 stories_from_iterations = iterations.first.stories
+
+...
+
+api.reset!
 ```
 
 ## Contributing

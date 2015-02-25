@@ -1,16 +1,23 @@
+require 'pivotaltracker/api/configuration'
+require 'pivotaltracker/api/client'
+require 'pivotaltracker/api/host'
+
 module PivotalTracker
   class API
-
-    def project(project_id)
-      raise NoProjectError.new(project_id)
+    def self.configure
+      yield(configuration)
     end
 
-    private
+    def self.reset!
+      @configuration = Configuration.new
+    end
 
-    attr_reader :token
+    def self.configuration
+      @configuration ||= Configuration.new
+    end
 
-    def initialize(token)
-      @token = token
+    def self.build_client
+      @configuration.client.new(@configuration.token)
     end
   end
 end
