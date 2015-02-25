@@ -2,6 +2,12 @@
 
 Pivotal Tracker API v.5 client.
 
+[![Code
+Climate](https://codeclimate.com/github/guiman/pivotaltracker/badges/gpa.svg)](https://codeclimate.com/github/guiman/pivotaltracker)
+[![Build
+Status](https://travis-ci.org/guiman/pivotaltracker.svg)](https://travis-ci.org/guiman/pivotaltracker)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
