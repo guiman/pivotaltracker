@@ -6,8 +6,8 @@ Pivotal Tracker API v.5 client.
 Climate](https://codeclimate.com/github/guiman/pivotaltracker/badges/gpa.svg)](https://codeclimate.com/github/guiman/pivotaltracker)
 [![Build
 Status](https://travis-ci.org/guiman/pivotaltracker.svg)](https://travis-ci.org/guiman/pivotaltracker)
-[![Code
-Climate](https://codeclimate.com/github/guiman/pivotaltracker/badges/gpa.svg)](https://codeclimate.com/github/guiman/pivotaltracker)
+[![Test
+Coverage](https://codeclimate.com/github/guiman/pivotaltracker/badges/coverage.svg)](https://codeclimate.com/github/guiman/pivotaltracker)
 
 ## Installation
 
