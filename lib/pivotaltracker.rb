@@ -2,6 +2,7 @@ require 'pivotaltracker/version'
 require 'pivotaltracker/api'
 require 'pivotaltracker/project'
 require 'pivotaltracker/story'
+require 'pivotaltracker/resource'
 require 'faraday'
 
 module PivotalTracker

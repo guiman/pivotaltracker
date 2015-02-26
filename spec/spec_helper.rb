@@ -5,6 +5,7 @@ require 'pivotaltracker'
 require 'vcr'
 require 'byebug'
 require 'webmock'
+require 'support/test_api_setup'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -19,6 +20,7 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = File.join(__dir__, 'fixtures', 'vcr_cassettes')
   config.hook_into :webmock
+  config.ignore_hosts 'codeclimate.com'
 end
 
 module PivotalTracker
