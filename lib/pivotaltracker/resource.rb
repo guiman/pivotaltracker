@@ -1,3 +1,4 @@
+require 'pivotaltracker/resource/iteration'
 require 'pivotaltracker/resource/project'
 require 'pivotaltracker/resource/story'
 

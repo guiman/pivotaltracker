@@ -13,4 +13,15 @@ describe PivotalTracker::Resource::Project do
       expect(project.stories.first).to be_a(PivotalTracker::Resource::Story)
     end
   end
+
+  describe "#iterations" do
+    it "returns a collection of Iteration objects" do
+      setup_api
+      project_id = 367813
+      project = ::PivotalTracker::Project.find(project_id)
+
+      expect(project.iterations).not_to be_empty
+      expect(project.iterations.first).to be_a(PivotalTracker::Resource::Iteration)
+    end
+  end
 end

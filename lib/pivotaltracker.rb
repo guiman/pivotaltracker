@@ -1,5 +1,6 @@
 require 'pivotaltracker/version'
 require 'pivotaltracker/api'
+require 'pivotaltracker/iteration'
 require 'pivotaltracker/project'
 require 'pivotaltracker/story'
 require 'pivotaltracker/resource'
