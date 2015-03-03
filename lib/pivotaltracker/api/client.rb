@@ -6,8 +6,8 @@ module PivotalTracker
         @token = token
       end
 
-      def get(endpoint, id, options={})
-        endpoint_url = build_url(endpoint, id, options)
+      def get(endpoint, id)
+        endpoint_url = build_url(endpoint, id)
         connection = @adapter.new(url: ::PivotalTracker::API::HOST)
         response = connection.get(endpoint_url) { |req| req.headers['X-TrackerToken'] = @token }
         response
@@ -15,7 +15,7 @@ module PivotalTracker
 
       private
 
-      def build_url(endpoint, id, options={})
+      def build_url(endpoint, id)
         parsed_endpoint = endpoint.gsub(/:project_id/, id.to_s)
         "services/v5/#{parsed_endpoint}"
       end

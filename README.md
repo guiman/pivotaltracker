@@ -27,17 +27,38 @@ Or install it yourself as:
 
 ## Usage
 
+### Set your credentials
+
 ```
 api = PivotalTracker::API.new(configuration) do |config|
   config.token = api_token
 end
+```
 
+### Fetch stories and iterations for the project
+ 
+```
 project = PivotalTracker::Project.find(project_id)
 
 stories = project.stories
+
 iterations = project.iterations
 
 stories_from_iterations = iterations.first.stories
+```
+
+### Fetch only specified fiels for stories
+
+```
+stories = project.stories(fields: [:url, :accepted_at, :name])
+
+story = stories.first
+
+story.url # https://www.pivotaltracker.com/story/show/123456
+
+story.accepted_at # 2015-03-03 08:05:55
+
+story.name # My story name
 
 ...
 

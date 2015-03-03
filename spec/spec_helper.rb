@@ -26,7 +26,7 @@ end
 module PivotalTracker
   class API
     class TestClient < ::PivotalTracker::API::Client
-      def get(endpoint, id, options={})
+      def get(endpoint, id)
         casette =  if id < 0
           "non_existing"
         else
@@ -37,7 +37,7 @@ module PivotalTracker
         casette.prepend("#{resource}")
 
         VCR.use_cassette(casette) do
-          super(endpoint, id, options)
+          super(endpoint, id)
         end
       end
     end
