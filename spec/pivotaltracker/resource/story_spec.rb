@@ -31,4 +31,17 @@ describe PivotalTracker::Resource::Story do
       expect(story.accepted_at).to eq(DateTime.parse("2015-02-17T12:00:00Z"))
     end
   end
+
+  describe "#current_state" do
+    it "returns a string representing the current state" do
+      story = described_class.new({ "id" => "123", "current_state" => "unstarted" })
+      expect(story.current_state).to eq("unstarted")
+    end
+
+    it "its a valid state" do
+      expect do
+        described_class.new({ "id" => "123", "current_state" => "Foo" })
+      end.to raise_error(PivotalTracker::Resource::Story::InvalidStoryError)
+    end
+  end
 end
