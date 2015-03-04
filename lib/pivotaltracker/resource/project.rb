@@ -3,10 +3,11 @@ module PivotalTracker
     class Project
       include Comparable
 
-      attr_reader :id
+      attr_reader :id, :name
 
       def initialize(data)
         @id = data.fetch("id")
+        @name  = data.fetch("name", nil)
       end
 
       def stories

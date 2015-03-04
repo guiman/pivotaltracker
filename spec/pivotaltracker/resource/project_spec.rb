@@ -3,6 +3,13 @@ require 'spec_helper'
 describe PivotalTracker::Resource::Project do
   include TestApiSetup
 
+  describe "#name" do
+    it "returns a string representing the project name" do
+      project = PivotalTracker::Resource::Project.new( "id" => 123, "name" => "My project")
+      expect(project.name).to eq("My project")
+    end
+  end
+
   describe "#stories" do
     it "returns a collection of Story objects" do
       setup_api
