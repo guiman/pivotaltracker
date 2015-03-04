@@ -36,7 +36,10 @@ project = PivotalTracker::Project.find(project_id)
 
 stories = project.stories
 
-labels = stories.first.labels # => ["label 1", "label 2"]
+story = stories.first
+
+story.labels # => ["label 1", "label 2"]
+story.id # "123"
 
 iterations = project.iterations
 
