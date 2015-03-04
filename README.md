@@ -39,7 +39,9 @@ stories = project.stories
 story = stories.first
 
 story.labels # => ["label 1", "label 2"]
-story.id # "123"
+story.id # => "123"
+story.url # => "https://www.pivotaltracker.com/story/show/123"
+story.accepted_at # => #<DateTime: 2015-02-17T12:00:00+00:00 ...>
 
 iterations = project.iterations
 
