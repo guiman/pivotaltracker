@@ -52,6 +52,25 @@ stories_from_iterations = iterations.first.stories
 api.reset!
 ```
 
+## Testing helpers
+
+We provide a TestClient that allows an application using the gem, not to worry
+about test calling API multiple times.
+
+Require dependencies to use this functionality are vcr and webmock. Also VCR is
+expected to be properly configured by the time the TestClient is used.
+
+### Example code
+
+```
+require 'pivotaltracker/api/test_client'
+
+PivotalTracker::API.configure do |config|
+  config.client = PivotalTracker::API::TestClient
+  ...
+end
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/pivotaltracker/fork )
