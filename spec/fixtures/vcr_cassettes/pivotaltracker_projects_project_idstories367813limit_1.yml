@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/projects/367813
+    uri: https://www.pivotaltracker.com/services/v5/projects/367813/stories?limit=1
     body:
       encoding: US-ASCII
       string: ''
@@ -28,16 +28,24 @@ http_interactions:
       - 200 OK
       X-Tracker-Project-Version:
       - '79039'
+      X-Tracker-Pagination-Total:
+      - '3104'
+      X-Tracker-Pagination-Offset:
+      - '0'
+      X-Tracker-Pagination-Limit:
+      - '1'
+      X-Tracker-Pagination-Returned:
+      - '1'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 72e78b7a62b1802202a853340109cd68
+      - fc8518131822b5ed1c205dfdf125088c
       X-Runtime:
-      - '0.052844'
+      - '0.057863'
       Date:
-      - Wed, 25 Feb 2015 08:51:50 GMT
+      - Thu, 05 Mar 2015 09:01:22 GMT
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,9 +64,9 @@ http_interactions:
       - '8'
     body:
       encoding: ASCII-8BIT
-      string: '{"id":367813,"kind":"project","name":"Departments and policy (Dev)","version":79039,"iteration_length":2,"week_start_day":"Wednesday","point_scale":"0,1,2,3,5,8","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"Europe/London","offset":"+00:00"},"velocity_averaged_over":1,"number_of_done_iterations_to_show":12,"has_google_domain":false,"description":"The
-        \"departments and policy\" section of GOV.UK, including publishing tools for
-        government","enable_incoming_emails":true,"initial_velocity":25,"public":true,"atom_enabled":true,"start_date":"2011-09-14","start_time":"2011-09-13T23:00:00Z","created_at":"2011-09-11T19:50:57Z","updated_at":"2015-01-13T00:06:18Z","account_id":309645,"current_iteration_number":91,"enable_following":true}'
+      string: '[{"kind":"story","id":18524765,"created_at":"2011-09-20T10:08:40Z","updated_at":"2011-09-21T10:44:12Z","accepted_at":"2011-09-21T10:44:12Z","estimate":2,"story_type":"feature","name":"As
+        a policy writer I want to be able to save an unfinished policy so that I can
+        resume editing later","current_state":"accepted","requested_by_id":448581,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/18524765","owner_ids":[7918],"labels":[],"owned_by_id":7918}]'
     http_version: 
-  recorded_at: Wed, 25 Feb 2015 08:51:50 GMT
+  recorded_at: Thu, 05 Mar 2015 09:01:22 GMT
 recorded_with: VCR 2.9.3

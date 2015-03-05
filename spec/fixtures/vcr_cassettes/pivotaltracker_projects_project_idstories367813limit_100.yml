@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/projects/367813/stories
+    uri: https://www.pivotaltracker.com/services/v5/projects/367813/stories?limit=100
     body:
       encoding: US-ASCII
       string: ''
@@ -41,11 +41,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0f3e896fde04903f3e92326082028d11
+      - 55527d95eefdf643d10ac428faa95c1a
       X-Runtime:
-      - '0.035493'
+      - '0.095196'
       Date:
-      - Wed, 25 Feb 2015 08:51:51 GMT
+      - Thu, 05 Mar 2015 09:01:21 GMT
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -368,5 +368,5 @@ http_interactions:
         of documents in workflow.","description":"As a writer I want to delete draft
         or submitted documents I have created in error (because nobody''s perfect)","current_state":"accepted","requested_by_id":441235,"project_id":367813,"url":"https://www.pivotaltracker.com/story/show/19583339","owner_ids":[56824],"labels":[],"owned_by_id":56824}]'
     http_version: 
-  recorded_at: Wed, 25 Feb 2015 08:51:51 GMT
+  recorded_at: Thu, 05 Mar 2015 09:01:22 GMT
 recorded_with: VCR 2.9.3

@@ -19,6 +19,11 @@ describe PivotalTracker::Resource::Project do
       expect(project.stories).not_to be_empty
       expect(project.stories.first).to be_a(PivotalTracker::Resource::Story)
     end
+
+    it "returns a collection of Stories with a certain limit" do
+      project = described_class.new( "id" => "367813" )
+      expect(project.stories(limit: 1).count).to eq(1)
+    end
   end
 
   describe "#iterations" do
