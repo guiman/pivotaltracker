@@ -10,8 +10,8 @@ module PivotalTracker
         @name  = data.fetch("name", nil)
       end
 
-      def stories
-        fetch(::PivotalTracker::Story::STORIES_ENDPOINT, ::PivotalTracker::Resource::Story)
+      def stories(limit: 100)
+        fetch(::PivotalTracker::Story::STORIES_ENDPOINT, ::PivotalTracker::Resource::Story, limit)
       end
 
       def iterations
@@ -24,9 +24,9 @@ module PivotalTracker
 
       private
 
-      def fetch(endpoint, resource_klass)
+      def fetch(endpoint, resource_klass, limit=100)
         client = PivotalTracker::API.build_client
-        response = client.get(endpoint, id)
+        response = client.get(endpoint, id, { limit: limit })
         raise NoProjectError.new(id) if response.status != 200
         ::JSON.parse(response.body).map do |data|
           resource_klass.new(data)

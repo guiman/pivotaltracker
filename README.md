@@ -34,7 +34,7 @@ end
 
 project = PivotalTracker::Project.find(project_id)
 
-stories = project.stories
+stories = project.stories(limit: 10)
 
 story = stories.first
 
@@ -70,6 +70,9 @@ PivotalTracker::API.configure do |config|
   ...
 end
 ```
+
+All the cassettes written by it will be namespaced under `pivotraltracker_` file
+name.
 
 ## Contributing
 

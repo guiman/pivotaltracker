@@ -17,6 +17,7 @@ module PivotalTracker
 
       def build_url(endpoint, id, options={})
         parsed_endpoint = endpoint.gsub(/:project_id/, id.to_s)
+        parsed_endpoint.concat "?limit=#{options[:limit]}" if options[:limit]
         "services/v5/#{parsed_endpoint}"
       end
     end
